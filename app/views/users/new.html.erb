@@ -1,0 +1,4 @@
+<%= form_with model: @user, url: users_new_path, local: true, class: "center" do |f| %>
+  <%= f.text_field :name %>
+  <%= f.submit '印鑑のPDF作成' %>
+<% end %>
