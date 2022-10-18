@@ -1,5 +1,5 @@
 class User
   include ActiveModel::Model
-  attr_accessor :user
-  validates :user, presence: true
+  attr_accessor :name
+  validates :name, length: { is: 2 }
 end
